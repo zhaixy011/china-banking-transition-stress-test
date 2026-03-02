@@ -1,0 +1,2629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <world>
+        <region name="China">
+            <ghgpolicy name="CH4_TOTAL_CN">
+                <market>China</market>
+                <constraint year="2025">46.081</constraint>
+                <constraint year="2030">42.928</constraint>
+                <constraint year="2035">34.899</constraint>
+                <constraint year="2040">25.876</constraint>
+                <constraint year="2045">21.918</constraint>
+                <constraint year="2050">19.211</constraint>
+                <constraint year="2055">18.149</constraint>
+                <constraint year="2060">18.513</constraint>
+                <constraint year="2065">17.983</constraint>
+                <constraint year="2070">18.531</constraint>
+                <constraint year="2075">17.580</constraint>
+                <constraint year="2080">16.503</constraint>
+                <constraint year="2085">16.568</constraint>
+                <constraint year="2090">16.003</constraint>
+                <constraint year="2095">15.412</constraint>
+                <constraint year="2100">15.075</constraint>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>China</market>
+                <linked-policy>CH4_TOTAL_CN</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>China</market>
+                <linked-policy>CH4_TOTAL_CN</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>China</market>
+                <linked-policy>CH4_TOTAL_CN</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>China</market>
+                <constraint year="2025">1.227</constraint>
+                <constraint year="2030">-12.568</constraint>
+                <constraint year="2035">-29.512</constraint>
+                <constraint year="2040">-52.896</constraint>
+                <constraint year="2045">-79.093</constraint>
+                <constraint year="2050">-72.334</constraint>
+                <constraint year="2055">-95.040</constraint>
+                <constraint year="2060">-97.830</constraint>
+                <constraint year="2065">-111.842</constraint>
+                <constraint year="2070">-89.725</constraint>
+                <constraint year="2075">-109.574</constraint>
+                <constraint year="2080">-89.988</constraint>
+                <constraint year="2085">-102.551</constraint>
+                <constraint year="2090">-90.496</constraint>
+                <constraint year="2095">-99.617</constraint>
+                <constraint year="2100">-86.066</constraint>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>China</market>
+                <constraint year="2025">3600.324</constraint>
+                <constraint year="2030">3648.918</constraint>
+                <constraint year="2035">3242.148</constraint>
+                <constraint year="2040">2546.271</constraint>
+                <constraint year="2045">1793.064</constraint>
+                <constraint year="2050">1158.612</constraint>
+                <constraint year="2055">705.978</constraint>
+                <constraint year="2060">428.064</constraint>
+                <constraint year="2065">320.775</constraint>
+                <constraint year="2070">211.575</constraint>
+                <constraint year="2075">105.651</constraint>
+                <constraint year="2080">-0.273</constraint>
+                <constraint year="2085">-44.499</constraint>
+                <constraint year="2090">-88.998</constraint>
+                <constraint year="2095">-109.473</constraint>
+                <constraint year="2100">-129.675</constraint>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_CN">
+                <market>China</market>
+                <constraint year="2025">2.248</constraint>
+                <constraint year="2030">2.181</constraint>
+                <constraint year="2035">1.922</constraint>
+                <constraint year="2040">1.694</constraint>
+                <constraint year="2045">1.555</constraint>
+                <constraint year="2050">1.465</constraint>
+                <constraint year="2055">1.402</constraint>
+                <constraint year="2060">1.430</constraint>
+                <constraint year="2065">1.385</constraint>
+                <constraint year="2070">1.426</constraint>
+                <constraint year="2075">1.383</constraint>
+                <constraint year="2080">1.341</constraint>
+                <constraint year="2085">1.329</constraint>
+                <constraint year="2090">1.318</constraint>
+                <constraint year="2095">1.280</constraint>
+                <constraint year="2100">1.249</constraint>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>China</market>
+                <linked-policy>N2O_TOTAL_CN</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>China</market>
+                <linked-policy>N2O_TOTAL_CN</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>China</market>
+                <linked-policy>N2O_TOTAL_CN</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>China</market>
+                <constraint year="2025">3.118</constraint>
+                <constraint year="2030">2.293</constraint>
+                <constraint year="2035">2.133</constraint>
+                <constraint year="2040">1.848</constraint>
+                <constraint year="2045">1.581</constraint>
+                <constraint year="2050">1.418</constraint>
+                <constraint year="2055">1.283</constraint>
+                <constraint year="2060">1.185</constraint>
+                <constraint year="2065">1.095</constraint>
+                <constraint year="2070">1.009</constraint>
+                <constraint year="2075">0.906</constraint>
+                <constraint year="2080">0.798</constraint>
+                <constraint year="2085">0.723</constraint>
+                <constraint year="2090">0.644</constraint>
+                <constraint year="2095">0.621</constraint>
+                <constraint year="2100">0.540</constraint>
+            </ghgpolicy>
+        </region>
+        <region name="USA">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+                <constraint year="2025">379.771</constraint>
+                <constraint year="2030">379.656</constraint>
+                <constraint year="2035">362.675</constraint>
+                <constraint year="2040">352.264</constraint>
+                <constraint year="2045">332.332</constraint>
+                <constraint year="2050">316.941</constraint>
+                <constraint year="2055">302.910</constraint>
+                <constraint year="2060">294.351</constraint>
+                <constraint year="2065">283.340</constraint>
+                <constraint year="2070">284.870</constraint>
+                <constraint year="2075">270.067</constraint>
+                <constraint year="2080">255.391</constraint>
+                <constraint year="2085">248.031</constraint>
+                <constraint year="2090">235.855</constraint>
+                <constraint year="2095">234.935</constraint>
+                <constraint year="2100">233.761</constraint>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>USA</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>USA</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>USA</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+                <constraint year="2025">1129.215</constraint>
+                <constraint year="2030">881.759</constraint>
+                <constraint year="2035">648.377</constraint>
+                <constraint year="2040">423.610</constraint>
+                <constraint year="2045">175.985</constraint>
+                <constraint year="2050">-102.216</constraint>
+                <constraint year="2055">-330.852</constraint>
+                <constraint year="2060">-615.005</constraint>
+                <constraint year="2065">-668.121</constraint>
+                <constraint year="2070">-757.365</constraint>
+                <constraint year="2075">-833.469</constraint>
+                <constraint year="2080">-949.008</constraint>
+                <constraint year="2085">-1040.933</constraint>
+                <constraint year="2090">-1157.477</constraint>
+                <constraint year="2095">-1080.535</constraint>
+                <constraint year="2100">-1026.264</constraint>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+                <constraint year="2025">6834.883</constraint>
+                <constraint year="2030">6491.176</constraint>
+                <constraint year="2035">6456.737</constraint>
+                <constraint year="2040">6709.887</constraint>
+                <constraint year="2045">6685.545</constraint>
+                <constraint year="2050">6509.697</constraint>
+                <constraint year="2055">5502.122</constraint>
+                <constraint year="2060">4309.747</constraint>
+                <constraint year="2065">2933.419</constraint>
+                <constraint year="2070">1559.003</constraint>
+                <constraint year="2075">1014.498</constraint>
+                <constraint year="2080">469.993</constraint>
+                <constraint year="2085">-21.054</constraint>
+                <constraint year="2090">-511.828</constraint>
+                <constraint year="2095">-814.833</constraint>
+                <constraint year="2100">-1118.111</constraint>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+                <constraint year="2025">10.147</constraint>
+                <constraint year="2030">10.979</constraint>
+                <constraint year="2035">10.880</constraint>
+                <constraint year="2040">10.919</constraint>
+                <constraint year="2045">10.712</constraint>
+                <constraint year="2050">10.566</constraint>
+                <constraint year="2055">10.350</constraint>
+                <constraint year="2060">10.315</constraint>
+                <constraint year="2065">9.778</constraint>
+                <constraint year="2070">9.576</constraint>
+                <constraint year="2075">9.247</constraint>
+                <constraint year="2080">8.917</constraint>
+                <constraint year="2085">8.841</constraint>
+                <constraint year="2090">8.596</constraint>
+                <constraint year="2095">8.628</constraint>
+                <constraint year="2100">8.651</constraint>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>USA</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>USA</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>USA</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+                <constraint year="2025">5.025</constraint>
+                <constraint year="2030">2.454</constraint>
+                <constraint year="2035">2.611</constraint>
+                <constraint year="2040">2.920</constraint>
+                <constraint year="2045">2.924</constraint>
+                <constraint year="2050">2.684</constraint>
+                <constraint year="2055">2.478</constraint>
+                <constraint year="2060">2.322</constraint>
+                <constraint year="2065">2.050</constraint>
+                <constraint year="2070">1.856</constraint>
+                <constraint year="2075">1.855</constraint>
+                <constraint year="2080">1.861</constraint>
+                <constraint year="2085">1.784</constraint>
+                <constraint year="2090">1.679</constraint>
+                <constraint year="2095">1.539</constraint>
+                <constraint year="2100">1.457</constraint>
+            </ghgpolicy>
+        </region>
+        <region name="Africa_Eastern">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Eastern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Eastern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Eastern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Eastern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Eastern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Eastern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Africa_Northern">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Northern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Northern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Northern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Northern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Northern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Northern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Africa_Southern">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Southern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Southern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Southern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Southern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Southern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Southern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Africa_Western">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Western</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Western</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Western</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Western</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Western</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Africa_Western</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Australia_NZ">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Australia_NZ</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Australia_NZ</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Australia_NZ</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Australia_NZ</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Australia_NZ</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Australia_NZ</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Brazil">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Brazil</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Brazil</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Brazil</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Brazil</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Brazil</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Brazil</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Canada">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Canada</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Canada</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Canada</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Canada</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Canada</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Canada</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Central America and Caribbean">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Central America and Caribbean</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Central America and Caribbean</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Central America and Caribbean</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Central America and Caribbean</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Central America and Caribbean</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Central America and Caribbean</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Central Asia">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Central Asia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Central Asia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Central Asia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Central Asia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Central Asia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Central Asia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="EU-12">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>EU-12</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>EU-12</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>EU-12</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>EU-12</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>EU-12</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>EU-12</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="EU-15">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>EU-15</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>EU-15</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>EU-15</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>EU-15</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>EU-15</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>EU-15</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Ukraine">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Ukraine</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Ukraine</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Ukraine</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Ukraine</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Ukraine</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Ukraine</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Europe_Non_EU">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Europe_Non_EU</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Europe_Non_EU</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Europe_Non_EU</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Europe_Non_EU</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Europe_Non_EU</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Europe_Non_EU</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="European Free Trade Association">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>European Free Trade Association</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>European Free Trade Association</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>European Free Trade Association</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>European Free Trade Association</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>European Free Trade Association</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>European Free Trade Association</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="India">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>India</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>India</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>India</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>India</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>India</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>India</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Indonesia">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Indonesia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Indonesia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Indonesia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Indonesia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Indonesia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Indonesia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Japan">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Japan</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Japan</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Japan</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Japan</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Japan</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Japan</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Mexico">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Mexico</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Mexico</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Mexico</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Mexico</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Mexico</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Mexico</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Middle East">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Middle East</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Middle East</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Middle East</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Middle East</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Middle East</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Middle East</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Pakistan">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Pakistan</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Pakistan</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Pakistan</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Pakistan</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Pakistan</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Pakistan</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Russia">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Russia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Russia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Russia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Russia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Russia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Russia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="South Africa">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Africa</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Africa</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Africa</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Africa</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Africa</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Africa</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="South America_Northern">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South America_Northern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South America_Northern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South America_Northern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South America_Northern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South America_Northern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South America_Northern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="South America_Southern">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South America_Southern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South America_Southern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South America_Southern</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South America_Southern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South America_Southern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South America_Southern</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="South Asia">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Asia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Asia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Asia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Asia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Asia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Asia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="South Korea">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Korea</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Korea</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Korea</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Korea</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Korea</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>South Korea</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Southeast Asia">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Southeast Asia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Southeast Asia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Southeast Asia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Southeast Asia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Southeast Asia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Southeast Asia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Taiwan">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Taiwan</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Taiwan</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Taiwan</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Taiwan</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Taiwan</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Taiwan</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Argentina">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Argentina</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Argentina</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Argentina</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Argentina</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Argentina</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Argentina</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+        <region name="Colombia">
+            <ghgpolicy name="CH4_TOTAL_ROW">
+                <market>ch4_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="CH4">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Colombia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4</price-unit>
+                <output-unit>TgCH4</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Colombia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AGR</price-unit>
+                <output-unit>TgCH4_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CH4_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Colombia</market>
+                <linked-policy>CH4_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tCH4_AWB</price-unit>
+                <output-unit>TgCH4_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="CO2_LUC">
+                <market>co2_luc_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="CO2">
+                <market>co2_row</market>
+            </ghgpolicy>
+            <ghgpolicy name="N2O_TOTAL_ROW">
+                <market>n2o_total_row</market>
+            </ghgpolicy>
+            <linked-ghg-policy name="N2O">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Colombia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O</price-unit>
+                <output-unit>TgN2O</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AGR">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Colombia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AGR</price-unit>
+                <output-unit>TgN2O_AGR</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="N2O_AWB">
+                <price-adjust year="1975" fillout="1">0</price-adjust>
+                <demand-adjust year="1975" fillout="1">0</demand-adjust>
+                <price-adjust year="2025" fillout="1">1</price-adjust>
+                <demand-adjust year="2025" fillout="1">1</demand-adjust>
+                <market>Colombia</market>
+                <linked-policy>N2O_TOTAL_ROW</linked-policy>
+                <price-unit>1990$/tN2O_AWB</price-unit>
+                <output-unit>TgN2O_AWB</output-unit>
+            </linked-ghg-policy>
+            <ghgpolicy name="SF6">
+                <market>sf6_row</market>
+            </ghgpolicy>
+        </region>
+    </world>
+</scenario>
